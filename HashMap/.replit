@@ -1,0 +1,3 @@
+javac -classpath .:/jars/junit-4.12.jar:/jars/hamcrest-core-1.3.jar:/jars/json-simple-1.1.1.jar -d . hashN.java hashNTest.java
+
+java -classpath .:/jars/junit-4.12.jar:/jars/hamcrest-core-1.3.jar:/jars/json-simple-1.1.1.jar hashNTest
