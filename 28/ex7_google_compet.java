@@ -16,14 +16,14 @@ public class ex7_google_compet{
     System.out.println("rows = " + rows);
 
     char[][] mainArray = new char[rows][len];
-    
+
+    int count = 0;
     for(int i=0; i<rows; i++){ //проход по строкам
       for(int j=0; j<len; j++) { //проход по столбцам
-        if(i==0) {
-          while(massivBukv[j] != ' ') {
-            mainArray[i][j] = massivBukv[j];
-          }
-        }
+            if(count<massivBukv.length) {
+              mainArray[i][j] = massivBukv[count]; 
+              count++;    
+            }
       }
     }
     for(int i=0; i<rows; i++){
